@@ -1,0 +1,21 @@
+body {
+    background-color: lightblue;
+}
+  
+h1 {
+    text-align: center;
+    color: navy;
+
+}
+
+p{
+text-align: center;
+
+}
+
+img {
+display: block;
+margin-left: auto; 
+margin-right: auto;
+
+}
