@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <title></title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        div.page{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 200px 3fr;
+            grid-template-rows: 60px 10fr 20px;
+            grid-template-areas: 'menu header'
+                                 'menu mainContent'
+                                 'footer footer';
+        }
+        div.header{
+        
+            grid-area: header;
+            text-align: center; 
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        div.menu{
+
+            grid-area: menu;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        div.mainContent{
+     
+            grid-area: mainContent;
+            text-align: center;
+        }
+        div.footer{
+            background-color: gray;
+            grid-area: footer;
+        }
+        div.vmenu{
+                width: 200px;
+
+            }
+        div.vmenu a{
+                background-color: gray;
+                color: black;
+                display: block;
+                padding: 12px;
+                text-decoration: none;
+            }
+        div.vmenu a:hover{
+            background-color: darkgray;
+
+        }
+        div.vmenu a.active {
+            background-color: green;
+            color: white;
+        }
+        @media only screen and (max-width: 600px){
+        div.page{
+
+            grid-template-columns: 1fr;
+            grid-template-rows: 20px 1fr 4fr 20px;
+            grid-template-areas: 'header'
+                                 'menu' 
+                                 'mainContent'
+                                 'footer';
+            }
+        
+    }
+
+    
+    
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header"><h1> Velkommen! </h1></div>
+        
+        <div class="menu"><h3>Menu</h3>
+            <div class="vmenu">
+                <a href="#" class="active">Home</a>
+                <a href="https://www.youtube.com/">YouTube</a>
+                <a href="https://getacademy.moodlecloud.com/login/index.php">Moodle</a>
+                <a href="https://www.w3schools.com/default.asp">W3Schools</a>
+                <a href="https://github.com/">Github</a>
+              </div>
+        </div>
+        
+        <div class="mainContent">Text texttexttexttext texttexttexttext text texttexttext texttexttexttext text</div>
+        
+        <div class="footer">Footer</div>
+    </div>
+    </body>
+
+
+</html>
